@@ -151,9 +151,10 @@ a:hover,a:focus{
 	bottom: -10px;
 }
 .carousel-indicators li{
-	width: 10px;
-	height: 10px;
+	width: 12px;
+	height: 12px;
 	border-radius: 50%;
+	margin: 0 8px;
 }
 .footer__header{
 	font-size: 18px;
