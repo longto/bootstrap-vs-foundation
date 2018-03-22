@@ -2,18 +2,149 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css" rel="stylesheet" type="text/css">
-		<link rel="stylesheet" href="style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<title>Foundation | Welcome</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/css/foundation-flex.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.2/motion-ui.min.css">
+		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		<h1>Foundation | Welcome</h1>
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
-		<script>
-			$(document).foundation();
-		</script>
-		<script src="script.js" ></script>
-	</body>
+		<header >
+			<div class="header row">
+				<div class="columns medium-4 ">
+					<a href="/" class="header__logo">
+						<img src="http://ci-dev-mvc-b2c.product.workplace.nu/storage/ma/9473f02accde49b1ba5ca06b529b396a/127954ad5deb42d38d86c08ffd4aa9ad/png/0CD4E675F42E4B9C646DBF76F6263748FBF7F8CA/Logo-B2C.png"/>
+					</a>
+				</div>
+				<div class="columns medium-8 text-right">
+					<ul class="list-inline">
+						<li class="my-pages">
+							<a class="ico ico--user button-link" href="https://ci-dev-mvc-b2c.product.workplace.nu/inloggningssida">
+								Inloggningssida
+							</a>
+						</li>
+						<li class="minicart">
+							<a href="" class="cart ico ico--cart button-link">
+								<span class="cart__quantity">0</span>
+								Till kassan
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="clear-both"></div>
+			</div>
+			<div class="top-bar" id="mega-menu">
+				<div class="top-bar-left">
+					<ul class="dropdown menu" data-dropdown-menu>
+						<li><a class="button-link" href="#0">MAN</a></li>
+						<li><a class="button-link" href="#0">KVINNA</a></li>
+						<li><a class="button-link" href="#0">FRITID</a></li>
+						<li><a class="button-link" href="#0">MÄRKEN</a></li>
+						<li><a class="button-link" href="#0">CATEGORYDELETE</a></li>
+					</ul>
+				</div>
+				<div class="top-bar-right">
+					<form class="list-inline list-inline--search" role="search">
+						<input type="search" class="form-control search-menu" placeholder="Sök" autocomplete="off">
+						<button class="btn btn-default" type="submit">
+							<i class="fa fa-search"></i>	
+						</button>
+					</form>
+				</div>
+			</div>
+		</header>
+		<div id="headerCarousel" class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit="">
+			<ul class="orbit-container">
+				<button class="orbit-previous" aria-label="previous"><span class="show-for-sr">Previous Slide</span>◀</button>
+				<button class="orbit-next" aria-label="next"><span class="show-for-sr">Next Slide</span>▶</button>
+				<li class="orbit-slide is-active">
+					<img src="http://ci-dev-mvc.product.workplace.nu/storage/ma/d488c042fa2a4a8cac438df2a3e4ce9b/ca6d7572bcb243a187f9fcff6a18c8c7/1898-560-0-jpg.Jpeg/8C6F132BA5A34850F787E5240AE76C237D8B036A/Start-Hero-3.jpeg" alt="First slide">
+				</li>
+				<li class="orbit-slide">
+					<img src="http://ci-dev-mvc.product.workplace.nu/storage/ma/e1fcf8878c614089a30405b607426469/462d981330c1416c966a55680eda4e6b/1898-560-0-jpg.Jpeg/F5B5CB9724FEE03502D01C2BF1D04CBC5BAD3A1A/Start-Hero-2.jpeg" alt="Second slide">
+				</li>
+				<li class="orbit-slide">
+					<img src="http://ci-dev-mvc.product.workplace.nu/storage/ma/e1fcf8878c614089a30405b607426469/462d981330c1416c966a55680eda4e6b/1898-560-0-jpg.Jpeg/F5B5CB9724FEE03502D01C2BF1D04CBC5BAD3A1A/Start-Hero-2.jpeg" alt="Second slide">
+				</li>
+			</ul>
+		</div>
+		<div class="container">
+			<div class="row teaser">
+				<div class="columns">
+					<img alt="3Col-1.jpg" src="http://ci-dev-mvc.product.workplace.nu/storage/ma/fbbd06e2b9224305a306b60ef8c49260/20584498092d450496ea81f11f399d84/jpg/57C1DCD40E5CCAB8385C2E30CE0D65963D26D8BF/3Col-1.jpg">
+				</div>
+				<div class="columns">
+					<img alt="3Col-2.jpg" src="http://ci-dev-mvc.product.workplace.nu/storage/ma/9e097667de1a441eaee502eb4475f223/db6ae56c6ff24b0d87bc4b59b0e1ae94/jpg/1B6B8FF7E27E944A5E81FF6CB0D5A96EE756C6B4/3Col-2.jpg">
+				</div>
+				<div class="columns">
+					<img alt="3Col-3.jpg" src="http://ci-dev-mvc.product.workplace.nu/storage/ma/70b23be0d5554b8681db712a8140cc3a/50a3f3e18f33498380281e7b5c91b81d/jpg/B2D9CA81D330505853D167590A870CB3E2519991/3Col-3.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="container teaser">
+			<div class="row">
+				<div class="columns small-8 small-offset-2 brands-header text-center">
+					<h2 class="brands-header__name">VÅRA VARUMÄRKEN</h2>
+					<a href="/varumarken" class="brands-header__read-more">Visa alla</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="columns small-6 medium-4 medium-offset-2">
+					<img alt="3Col-1.jpg" src="http://ci-dev-mvc.product.workplace.nu/storage/ma/33a061f7938c4632aef752d4dc097df9/632859591d8f49f8beff0d8328797ae5/jpg/C3605012300030591055849C06CF69E058A86FF6/adrianhammond-thumb.jpg">
+				</div>
+				<div class="columns medium-4 small-6">
+					<img alt="3Col-2.jpg" src="http://ci-dev-mvc.product.workplace.nu/storage/ma/747b718b07be48fabf2d790900ed3ea3/8611e67a66a94612843d7610339a83bd/200-133-0-png.Png/BAF9BF536D351FFC0827984E023CC2BC2AC78BB4/odd-molly-logo.png">
+				</div>
+			</div>
+			<div class="row">
+				<div class="columns small-12">
+					<img alt="2Col-1.jpg" src="http://ci-dev-mvc.product.workplace.nu/storage/ma/f6dedad1cba24d068f412d668dbe6c5a/294810aef4aa4bae9e32804a33e18915/jpg/537BBD6AC0B6BBBE8BBFA7B16546DC6C8A4C0C95/2Col-1.jpg">
+				</div>
+				<div class="columns small-12">
+					<img alt="2Col-2.jpg" src="http://ci-dev-mvc.product.workplace.nu/storage/ma/7972e41c36074254a6abd83e5c354bfc/114d51b8710140ccb3a1d046bb7438c2/jpg/530D4E9DD5423C9B72A452F29AC248420D21DE34/2Col-2.jpg">
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer id="footer" class="container">
+		<div class="row">
+			<div class="small-10 small-offset-1 medium-3 medium-offset-0 columns">
+				<h5>HANDLA TRYGGT</h5>
+				<a href="/kundservice/fragor-svar">Frågor &amp; svar</a><br>
+				<a href="/kundservice/angerratt-och-garanti">Ångerrätt och garanti</a><br>
+				<a href="/kundservice/kopvillkor">Köpvillkor</a><br>
+				<a href="/kundservice/leveransvillkor">Leveransvillkor</a><br>
+				<p></p>
+				<p>this is internal <a href="/kundservice">link</a> in text</p>
+			</div>
+			<div class="small-10 small-offset-1 medium-3 medium-offset-0 columns">
+				<h5>POPULÄRA KATEGORIER</h5>
+				<a href="/man">Man</a><br>
+				<a href="/kvinna">Kvinna</a><br>
+				<a href="/Fritid">Fritid</a><br>
+			</div>
+			<div class="small-10 small-offset-1 medium-3 medium-offset-0 columns">
+				<h5>OM SURFACE</h5>
+				<a href="/kundservice/om-oss">Om oss</a><br>
+				<a href="/varumarken">Varumärken</a><br>
+			</div>
+			<div class="small-10 small-offset-1 medium-3 medium-offset-0 columns">
+				<h5>KONTAKTA OSS</h5>
+				<a href="/kundservice">Kundservice</a>
+				<p></p>
+				<p>Tel: 020 - 20 20 20<br/>
+					Öppet: 10-19<br/>
+				kundservice@surface.com</p>
+			</div>
+		</div>
+	</footer>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/js/foundation.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.2/motion-ui.min.js"></script>
+	<script>
+		$(document).foundation();
+	</script>
+	<script src="script.js" ></script>
+</body>
 </html>
