@@ -48,27 +48,40 @@
 					<form class="list-inline list-inline--search" role="search">
 						<input type="search" class="form-control search-menu" placeholder="Sök" autocomplete="off">
 						<button class="btn btn-default" type="submit">
-							<i class="fa fa-search"></i>	
+						<i class="fa fa-search"></i>
 						</button>
 					</form>
 				</div>
 			</div>
 		</header>
-		<div id="headerCarousel" class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit="">
+	
+		<div id="headerCarousel" class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
 			<ul class="orbit-container">
-				<button class="orbit-previous" aria-label="previous"><span class="show-for-sr">Previous Slide</span>◀</button>
-				<button class="orbit-next" aria-label="next"><span class="show-for-sr">Next Slide</span>▶</button>
-				<li class="orbit-slide is-active">
-					<img src="http://ci-dev-mvc.product.workplace.nu/storage/ma/d488c042fa2a4a8cac438df2a3e4ce9b/ca6d7572bcb243a187f9fcff6a18c8c7/1898-560-0-jpg.Jpeg/8C6F132BA5A34850F787E5240AE76C237D8B036A/Start-Hero-3.jpeg" alt="First slide">
+				<button class="orbit-previous">
+					<span class="show-for-sr">Previous Slide</span>
+					<span class="fa fa-chevron-circle-left"></span>
+				</button>
+				<button class="orbit-next">
+					<span class="show-for-sr">Next Slide</span>
+					<span class="fa fa-chevron-circle-right"></span>
+				</button>
+				<li class="is-active orbit-slide">
+					<img class="orbit-image" src="http://ci-dev-mvc.product.workplace.nu/storage/ma/e1fcf8878c614089a30405b607426469/462d981330c1416c966a55680eda4e6b/1898-560-0-jpg.Jpeg/F5B5CB9724FEE03502D01C2BF1D04CBC5BAD3A1A/Start-Hero-2.jpeg" alt="Space">
 				</li>
 				<li class="orbit-slide">
-					<img src="http://ci-dev-mvc.product.workplace.nu/storage/ma/e1fcf8878c614089a30405b607426469/462d981330c1416c966a55680eda4e6b/1898-560-0-jpg.Jpeg/F5B5CB9724FEE03502D01C2BF1D04CBC5BAD3A1A/Start-Hero-2.jpeg" alt="Second slide">
+					<img class="orbit-image" src="http://ci-dev-mvc.product.workplace.nu/storage/ma/d488c042fa2a4a8cac438df2a3e4ce9b/ca6d7572bcb243a187f9fcff6a18c8c7/1898-560-0-jpg.Jpeg/8C6F132BA5A34850F787E5240AE76C237D8B036A/Start-Hero-3.jpeg" alt="First slide" alt="Space">
 				</li>
 				<li class="orbit-slide">
-					<img src="http://ci-dev-mvc.product.workplace.nu/storage/ma/e1fcf8878c614089a30405b607426469/462d981330c1416c966a55680eda4e6b/1898-560-0-jpg.Jpeg/F5B5CB9724FEE03502D01C2BF1D04CBC5BAD3A1A/Start-Hero-2.jpeg" alt="Second slide">
+					<img class="orbit-image" src="http://ci-dev-mvc.product.workplace.nu/storage/ma/636ca671456949c79cdc02103eaf5625/00f2044a9a54474b90a1854e2e42665d/1898-560-0-jpg.Jpeg/1EB0389C54320B36333CED55209C04021BD6971D/Start-Hero-1.jpeg" alt="Second slide" alt="Space">
 				</li>
 			</ul>
+			<nav class="orbit-bullets">
+				<button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+				<button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+				<button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+			</nav>
 		</div>
+
 		<div class="container">
 			<div class="row teaser">
 				<div class="columns">
@@ -90,18 +103,18 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="columns small-6 medium-4 medium-offset-2">
+				<div class="columns small-6 medium-2 medium-offset-4">
 					<img alt="3Col-1.jpg" src="http://ci-dev-mvc.product.workplace.nu/storage/ma/33a061f7938c4632aef752d4dc097df9/632859591d8f49f8beff0d8328797ae5/jpg/C3605012300030591055849C06CF69E058A86FF6/adrianhammond-thumb.jpg">
 				</div>
-				<div class="columns medium-4 small-6">
+				<div class="columns medium-2 small-6">
 					<img alt="3Col-2.jpg" src="http://ci-dev-mvc.product.workplace.nu/storage/ma/747b718b07be48fabf2d790900ed3ea3/8611e67a66a94612843d7610339a83bd/200-133-0-png.Png/BAF9BF536D351FFC0827984E023CC2BC2AC78BB4/odd-molly-logo.png">
 				</div>
 			</div>
 			<div class="row">
-				<div class="columns small-12">
+				<div class="columns small-12 medium-6">
 					<img alt="2Col-1.jpg" src="http://ci-dev-mvc.product.workplace.nu/storage/ma/f6dedad1cba24d068f412d668dbe6c5a/294810aef4aa4bae9e32804a33e18915/jpg/537BBD6AC0B6BBBE8BBFA7B16546DC6C8A4C0C95/2Col-1.jpg">
 				</div>
-				<div class="columns small-12">
+				<div class="columns small-12 medium-6">
 					<img alt="2Col-2.jpg" src="http://ci-dev-mvc.product.workplace.nu/storage/ma/7972e41c36074254a6abd83e5c354bfc/114d51b8710140ccb3a1d046bb7438c2/jpg/530D4E9DD5423C9B72A452F29AC248420D21DE34/2Col-2.jpg">
 				</div>
 			</div>

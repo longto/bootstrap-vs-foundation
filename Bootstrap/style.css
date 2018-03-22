@@ -140,8 +140,9 @@ a:hover,a:focus{
 	margin-bottom: 14px;
 }
 .carousel-control-next,.carousel-control-prev{
-	width: 5%;
+	width: 50px;
 	transition: background 0.3s ease;
+	font-size: 30px;
 }
 .carousel-control-next:hover,.carousel-control-prev:hover{
 	background: rgba(0,0,0,0.5);
