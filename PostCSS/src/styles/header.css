@@ -1,0 +1,122 @@
+header{
+    padding: 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.logo {
+    display: inline-block;
+    padding: 10px 0 5px 20px;
+}
+.full-width{
+    width: 100%;
+}
+.button-link {
+    color: rgba(0,0,0,.5);
+    padding: 10px 15px;
+    font-size: 14px;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    vertical-align: middle;
+    line-height: 24px;
+    height: 45px;
+    &:hover,&:focus,&:visited{
+        background-color: #fafafa;
+        color: rgba(0,0,0,.7);
+        text-decoration: none;    
+    }
+}
+.login{
+    margin-left: auto;
+}
+.cart {
+    position: relative;
+}
+.cart__quantity {
+    position: absolute;
+    top: 10px;
+    left: 34px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #2196d0;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+}
+.ico:before{
+    content: '';
+    width: 25px;
+    height: 25px;
+    vertical-align: top;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+}
+.ico--user:before{
+    background-image: url('http://ci-dev-mvc-b2c.product.workplace.nu/ui/img/accelerator/icons/png/user.png');
+}
+.ico--cart:before{
+    background-image: url('http://ci-dev-mvc-b2c.product.workplace.nu/ui/img/accelerator/icons/png/shopping-bag.png');
+}
+.search-form{
+    display: flex;
+    border: 1px solid #ced4da;
+    height: 32px;
+    margin-top: 20px;
+    margin-left: auto;
+    padding: 3px 5px;
+    *,*:focus{
+        border: none;
+        box-shadow: none;
+        outline: none;    
+    }
+    input{
+        max-width: 150px;
+        margin: 0;    
+    }
+    button{
+        cursor: pointer;
+        background: none;
+    }
+}
+.ico--search:before{
+  display: inline-block;
+  margin-top: -3px;
+  content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+}
+@media (max-width: 768px){
+    .logo{
+        order: 1;
+        margin: auto;
+        padding: 0 0 0 40px;
+        img{
+            height: 45px;
+            image-rendering: pixelated;
+        }
+    }
+    .login{
+        order : 5;
+        display: none;
+    }
+    .search-form{
+        order: 2; 
+        border: none;
+        margin-left: auto;
+        margin-top: 8px;
+        margin-left: 0;
+        input{
+            display: none;
+        }  
+    }
+    .cart{
+        order: 3;
+        .cart__title{
+            display: none;
+        }
+    }
+    
+}

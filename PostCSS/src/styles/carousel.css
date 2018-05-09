@@ -1,0 +1,62 @@
+.carousel {
+  white-space : nowrap;
+  scroll-behavior: smooth;
+  position : relative;
+  height : calc(29.5040540541vw + 15px) ;
+  .carousel__item{
+    opacity : 0;
+    transition : all 0.3s ease;
+    position: absolute;
+    img{
+      width : 100%;
+    }
+  }
+  [name='activator']{
+    display : none;
+    &:checked + .carousel__item{
+      opacity : 1;
+    }
+  }
+  .carousel__control {
+    position : absolute;
+    right : 0;
+    width : 60px;
+    top : 0;
+    height : calc(100% - 15px);
+    cursor : pointer;
+    z-index : 9;
+    transition : all 0.3s ease;
+    &.next{
+      content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="#ddd"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+    }
+    &.prev{
+      right : auto;
+      left : 0;
+      content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="#ddd"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+    }
+    &:hover{
+      background-color : rgba(0,0,0,0.8);
+    }
+  }
+  >a{
+  	&,&:focus,&:visited,&:hover{
+  	  outline : none;
+  	}
+  }
+  
+  .indicators{
+    position : absolute;
+    bottom : 20px;
+    width : 100%;
+    text-align: center;
+    .indicator-dot{
+      width : 15px;
+      height : 15px;
+      background-color : #fff;
+      border-radius : 50%;
+      margin : 5px;
+      display : inline-block;
+      cursor : pointer;
+    }
+  }
+}

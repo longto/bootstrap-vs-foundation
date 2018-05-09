@@ -1,0 +1,11 @@
+footer section{
+	lost-column: 1/4;
+	line-height: 1.5;
+	word-break: break-word;
+	header {
+		padding: 0;
+		font-size: 18px;
+    	font-weight: 400;
+    	color: #333;
+	}
+}

@@ -1,0 +1,19 @@
+@import 'normalize/index.css';
+
+html {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  line-height: 1.5;
+
+  & * {
+    box-sizing: inherit;
+  }
+
+	a{
+		&,&:hover,&:focus{
+			color : #0078a0;
+			text-decoration: none;		
+		}
+	}
+}
+

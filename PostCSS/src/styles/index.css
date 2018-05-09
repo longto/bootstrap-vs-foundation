@@ -1,0 +1,10 @@
+:root {
+  --turquoise: #0078a0;
+}
+
+.a {
+  &,&:hover, &:focus, &: visited {
+    color: var(--turquoise);
+    text-decoration: none;
+  }
+}
